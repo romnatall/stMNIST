@@ -7,6 +7,9 @@ import matplotlib.pyplot as plt
 from M import *
 from streamlit_drawable_canvas import st_canvas
 
+import tk
+import turtle 
+
 # Загрузка модели PyTorch
 @st.cache_resource
 def load_model():
