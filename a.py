@@ -14,9 +14,7 @@ def load_model():
     model.eval()
     return model
 
-if "model" not in st.session_state.keys():
-    st.session_state["model"] = load_model()
-model = st.session_state["model"]
+model = load_model()
 # Функция для обработки нарисованной цифры и предсказания с помощью модели
 def predict_digit(image):
     # Преобразование изображения в тензор
